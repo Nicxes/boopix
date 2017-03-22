@@ -43,6 +43,7 @@ body {
     background: #f4f7f6;
     margin-bottom: 70px; }
   body.lab-x2 {
+    background: #f4f7f6;
     margin-bottom: 220px; }
   body.modal-open {
     overflow: inherit !important;
@@ -702,6 +703,8 @@ h1, h2, h3, h4, h5, h6 {
           line-height: 48px; }
       .header .social-connect li:hover, .header .social-connect li.active {
         opacity: 1; }
+      .header .social-connect li.active .arrow {
+        visibility: visible; }
       .header .social-connect li.facebook {
         background: #3b5998; }
       .header .social-connect li.instagram {
@@ -724,6 +727,7 @@ h1, h2, h3, h4, h5, h6 {
         border: 2px solid #f4f7f6; }
       .header .social-connect li .arrow {
         position: absolute;
+        visibility: hidden;
         bottom: -15px;
         left: 18px;
         width: 11px;
@@ -921,6 +925,7 @@ h1, h2, h3, h4, h5, h6 {
         border: 2px solid #f4f7f6; }
       .header-bottom .social-connect li .arrow {
         position: absolute;
+        visibility: hidden;
         top: -13px;
         left: 18px;
         width: 11px;
@@ -942,6 +947,8 @@ h1, h2, h3, h4, h5, h6 {
           line-height: 48px; }
       .header-bottom .social-connect li:hover, .header-bottom .social-connect li.active {
         opacity: 1; }
+      .header-bottom .social-connect li.active .arrow {
+        visibility: visible; }
       .header-bottom .social-connect li.facebook {
         background: #3b5998; }
       .header-bottom .social-connect li.instagram {
@@ -1834,7 +1841,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     text-align: right;
     margin-top: 0;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-right: 5px; }
   .check .uploads li img {
     border: 8px solid #ffffff; }
   .check .uploads li .buttons {
