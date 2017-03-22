@@ -41,10 +41,36 @@ body {
     background: #f4f7f6; }
   body.lab {
     background: #f4f7f6;
-    margin-bottom: 70px; }
+    margin-top: 145px; }
+    @media screen and (min-width: 970px) {
+      body.lab {
+        margin-top: 100px;
+        margin-bottom: 0; } }
+    @media screen and (max-width: 768px) {
+      body.lab {
+        margin-top: 80px;
+        margin-bottom: 70px; } }
+    @media screen and (max-width: 767px) {
+      body.lab {
+        margin-top: 85px;
+        margin-bottom: 70px; } }
   body.lab-x2 {
+    background: #f4f7f6; }
+    @media screen and (min-width: 970px) {
+      body.lab-x2 {
+        margin-top: 100px;
+        margin-bottom: 0; } }
+    @media screen and (max-width: 768px) {
+      body.lab-x2 {
+        margin-top: 80px;
+        margin-bottom: 100px; } }
+    @media screen and (max-width: 767px) {
+      body.lab-x2 {
+        margin-top: 75px;
+        margin-bottom: 220px; } }
+  body.lab-x3 {
     background: #f4f7f6;
-    margin-bottom: 220px; }
+    margin-top: 70px; }
   body.modal-open {
     overflow: inherit !important;
     padding-right: 0 !important; }
@@ -646,7 +672,12 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 16px; } }
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 997;
+  width: 100%;
   background: #f4f7f6;
   border-bottom: 1px solid #d8d8d8;
   padding: 18px 0; }
@@ -728,7 +759,7 @@ h1, h2, h3, h4, h5, h6 {
       .header .social-connect li .arrow {
         position: absolute;
         visibility: hidden;
-        bottom: -15px;
+        bottom: -13px;
         left: 18px;
         width: 11px;
         height: 10px;
@@ -736,7 +767,7 @@ h1, h2, h3, h4, h5, h6 {
         .header .social-connect li .arrow .fa {
           position: absolute;
           left: -1px;
-          bottom: -4px;
+          bottom: -6px;
           color: #d8d8d8;
           font-size: 20px; }
   .header .next {
@@ -752,7 +783,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 14px 0; }
 
 .header-secundary {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 998;
   background: #f4f7f6;
   border-bottom: 1px solid #d8d8d8;
   padding: 12px 0; }

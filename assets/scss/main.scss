@@ -34,11 +34,38 @@ body {
   }
   &.lab {
     background: $lightgray;
-    margin-bottom: 70px;
+    margin-top: 145px;
+    @media screen and (min-width: $break-md) {
+      margin-top: 100px;
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: $break-sm) {
+      margin-top: 80px;
+      margin-bottom: 70px;
+    }
+    @media screen and (max-width: $break-xs) {
+      margin-top: 85px;
+      margin-bottom: 70px;
+    }
   }
   &.lab-x2 {
     background: $lightgray;
-    margin-bottom: 220px;
+    @media screen and (min-width: $break-md) {
+      margin-top: 100px;
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: $break-sm) {
+      margin-top: 80px;
+      margin-bottom: 100px;
+    }
+    @media screen and (max-width: $break-xs) {
+      margin-top: 75px;
+      margin-bottom: 220px;
+    }
+  }
+  &.lab-x3 {
+    background: $lightgray;
+    margin-top: 70px;
   }
   &.modal-open {
     overflow: inherit !important;
@@ -203,8 +230,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .header {
-  position: relative;
-  background: #f4f7f6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 997;
+  width: 100%;
+
+  background: $lightgray;
   border-bottom: 1px solid #d8d8d8;
   padding: 18px 0;
   @media screen and (min-width: $break-sm) {
@@ -288,7 +321,7 @@ h1,h2,h3,h4,h5,h6 {
       .arrow {
         position: absolute;
         visibility: hidden;
-        bottom: -15px;
+        bottom: -13px;
         left: 18px;
         width: 11px;
         height: 10px;
@@ -297,7 +330,7 @@ h1,h2,h3,h4,h5,h6 {
         .fa {
           position: absolute;
           left: -1px;
-          bottom: -4px;
+          bottom: -6px;
 
           color: #d8d8d8;
           font-size: 20px;
@@ -322,7 +355,13 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .header-secundary {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 998;
+
   background: #f4f7f6;
   border-bottom: 1px solid #d8d8d8;
   padding: 12px 0;
