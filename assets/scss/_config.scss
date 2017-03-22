@@ -1,0 +1,51 @@
+/* =============================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GothamRounded.otf');
+}
+
+$font-stack:    		'Roboto', sans-serif;
+$font-title:        'Gotham';
+
+/* =============================================================================
+   Variables
+   ========================================================================== */
+
+$red:               #d75a4a;
+$blue:              #197ecd;
+$white:             #ffffff;
+$lightgray:         #f4f7f6;
+$gray:              #9b9b9b;
+$darkgray:          #3d3e3e;
+$darkgray-2:        #dadbda;
+
+$facebook:          #3b5998;
+$instagram:         #d300c5;
+$drive:             #31a95a;
+$dropbox:           #0a7dec;
+
+$break-xs: 			    767px;
+$break-sm: 			    768px;
+$break-md: 			    970px;
+$break-lg:          1170px;
+
+$spotlight-height:  480px;
+
+/* =============================================================================
+   Mixins
+   ========================================================================== */
+
+@mixin bottom-gradient {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.7));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.7));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.7));
+}
+
+@mixin right-gradient {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #000000);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), #000000);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #000000);
+}

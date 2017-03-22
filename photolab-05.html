@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Boopix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Ion Icons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css">
+
+</head>
+<body class="lab">
+
+  <!-- Header 1 - Con items
+  ================================================== -->
+  <header class="header-secundary">
+   <div class="container">
+    <div class="row">
+
+     <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1 no-padding-right-xs">
+      <h5 class="back"><a href=""><i class="fa fa-angle-left" aria-hidden="true"></i></a></h5>
+     </div>
+
+     <div class="col-xs-7 col-sm-8 col-md-7 col-md-offset-1 col-lg-7 text-center">
+      <h5 class="title hidden-sm hidden-md hidden-lg">Carga tu domicilio</h5>
+      <ul class="steps hidden-xs">
+        <li class="active">Forma de envio</li>
+        <li>Resumen</li>
+        <li>Pago</li>
+      </ul>
+     </div>
+
+     <div class="hidden-xs col-sm-2 col-md-3 col-lg-3 text-right">
+       <ul class="menu-logged text-right">
+        <li class="hidden-xs hidden-sm name">Ema Villarruel</li>
+        <li class="avatar hidden-sm hidden-md hidden-lg" id="showmenu">
+         <img src="https://s-media-cache-ak0.pinimg.com/originals/6a/5c/03/6a5c036e14fd0a6242da8df9bb3ecc75.jpg" alt="Ema Villarruel">
+        </li>
+        <li class="dropdown avatar hidden-xs">
+          <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/6a/5c/03/6a5c036e14fd0a6242da8df9bb3ecc75.jpg" alt="Ema Villarruel">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <div class="arrow"></div>
+            <li><a href="#">Mi laboratorio</a></li>
+            <li><a href="#">Mis pedidos</a></li>
+            <li><a href="#">Salir</a></li>
+          </ul>
+        </li>
+       </ul>
+     </div>
+
+    </div>
+   </div>
+  </header>
+
+  <div class="menu-mobile hidden-sm hidden-md hidden-lg" style="display: none;">
+   <div class="container">
+    <ul>
+      <li><a href="">Mi laboratorio</a></li>
+      <li><a href="">Mis pedidos</a></li>
+      <li><a href="">Salir</a></li>
+    </ul>
+   </div>
+  </div>
+
+  <!-- Dropzone
+  ================================================== -->
+  <section class="newaddress">
+   <div class="container title hidden-xs">
+    <h4>Carga tu domicilio</h4>
+   </div>
+
+   <div class="card-form">
+    <div class="container">
+     <form action="">
+      <div class="row">
+       <div class="form-group col-xs-12 col-sm-6 col-md-6">
+        <input type="text" class="form-control" id="exampleInputText1" placeholder="Calle*">
+       </div>
+       <div class="form-group col-xs-12 col-sm-3 col-md-3">
+        <input type="text" class="form-control" id="exampleInputText2" placeholder="Número*">
+       </div>
+      </div>
+      <div class="row">
+       <div class="form-group col-xs-12 col-sm-6 col-md-6">
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Datos adicionales. Ej. Dpto A, 1er piso">
+       </div>
+      </div>
+      <div class="row">
+       <div class="form-group col-xs-12 col-sm-3 col-md-3">
+        <input type="text" class="form-control" id="exampleInputText3" placeholder="Código postal*">
+       </div>
+       <div class="form-group col-xs-12 col-sm-3 col-md-3">
+        <select class="form-control" id="sel1">
+          <option>Provincia*</option>
+          <option>Buenos Aires</option>
+          <option>Córdoba</option>
+        </select>
+       </div>
+       <div class="form-group col-xs-12 col-sm-6 col-md-6">
+         <select class="form-control" id="sel1">
+           <option>Ciudad*</option>
+           <option>Ciudad de Buenos Aires</option>
+           <option>Quilmes</option>
+         </select>
+       </div>
+      </div>
+      <div class="row">
+       <div class="form-group col-xs-12 col-sm-6 col-md-6">
+        <input type="text" class="form-control" id="exampleInputText5" placeholder="Nombre del domicilio Ej.: Casa, Oficina*">
+       </div>
+       <div class="form-group col-xs-12 col-sm-6 col-md-6">
+        <input type="text" class="form-control" id="exampleInputText6" placeholder="Teléfono de contacto*">
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+
+   <div class="container btns">
+    <a type="submit" class="btn btn-primary">Agregar domicilio</a>
+    <a type="submit" class="btn btn-cancel">Cancelar</a>
+   </div>
+  </section>
+
+  <!-- Footer
+  ================================================== -->
+  <footer class="footer hidden-xs hidden-sm">
+   <div class="container">
+    <div class="row">
+     <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+      <span class="login"><a href="/">Ingresar</a></span>
+     </div>
+     <div class="hidden-xs col-sm-12 col-md-10">
+      <span class="logo"><a href="/"><img src="assets/images/logos/logo-footer.png"></a></span>
+     </div>
+     <div class="col-xs-6 col-sm-12 col-md-2">
+      <ul class="social">
+        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </footer>
+
+  <footer class="copyright hidden-xs hidden-sm">
+   <div class="container">
+    <ul>
+      <li>boopix - Copyright 2016</li>
+      <li class="hidden-xs"><a href="">Términos y condiciones</a></li>
+      <li class="hidden-xs"><a href="">Privacidad</a></li>
+    </ul>
+   </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="assets/js/cropper.js"></script>
+  <script src="assets/js/dropzone.js"></script>
+  <script src="assets/js/select.js"></script>
+  <script src="https://use.fontawesome.com/34c19b2e94.js"></script>
+
+  <script>
+  $(document).ready(function() {
+   $('#showmenu').click(function() {
+    $('.menu-mobile').slideToggle("fast");
+   });
+  });
+  </script>
+
+</body>
+</html>

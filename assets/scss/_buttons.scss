@@ -1,0 +1,90 @@
+.btn-primary {
+  background: $blue;
+  border-radius: 50px;
+  padding: 8px 24px;
+  border: none;
+}
+.btn-login {
+  color: white;
+  font-size: 18px;
+  background: $blue;
+  padding: 10px 0;
+  margin: 40px 0;
+  border: none;
+  border-radius: 30px;
+  display: block;
+  width: 100%;
+}
+.btn-facebook {
+  position: relative;
+  color: $white;
+  font-size: 18px;
+  background: #3b5998;
+  width: 100%;
+  display: block;
+  padding: 12px 0;
+  .fa {
+    position: absolute;
+    left: 30px;
+    top: 13px;
+    font-size: 24px;
+  }
+}
+.btn-price {
+  position: relative;
+  color: $blue;
+  font-size: 18px;
+  font-weight: 500;
+  background: $white;
+  border-radius: 30px;
+  padding: 10px 24px;
+  z-index: 2;
+  @media screen and (max-width: $break-xs) {
+    padding: 10px 20px;
+  }
+}
+.btn-circle {
+  color: $blue;
+  background: $white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  padding: 0;
+  .fa {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+.btn-number {
+  color: $white;
+  background: $blue;
+}
+.btn-cancel {
+  color: $blue;
+  font-size: 16px;
+  background: transparent;
+  border: 0;
+}
+.btn-next {
+  font-size: 16px;
+}
+.btn-option {
+  width: 49%;
+  border: 1px solid $blue;
+  padding-left: 40px;
+  padding-right: 40px;
+  &.active {
+    color: $white;
+    background: $blue;
+  }
+  &.left {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  &.right {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}

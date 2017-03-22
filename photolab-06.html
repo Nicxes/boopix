@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Boopix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Ion Icons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css">
+
+</head>
+<body class="lab">
+
+  <!-- Header 1 - Con items
+  ================================================== -->
+  <header class="header-secundary">
+   <div class="container">
+    <div class="row">
+
+     <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1 no-padding-right-xs">
+      <h5 class="back"><a href=""><i class="fa fa-angle-left" aria-hidden="true"></i></a></h5>
+     </div>
+
+     <div class="col-xs-7 col-sm-8 col-md-7 col-md-offset-1 col-lg-7 text-center">
+      <h5 class="title hidden-sm hidden-md hidden-lg">Carga tu domicilio</h5>
+      <ul class="steps hidden-xs">
+        <li class="active">Forma de envio</li>
+        <li>Resumen</li>
+        <li>Pago</li>
+      </ul>
+     </div>
+
+     <div class="hidden-xs col-sm-2 col-md-3 col-lg-3 text-right">
+       <ul class="menu-logged text-right">
+        <li class="hidden-xs hidden-sm name">Ema Villarruel</li>
+        <li class="avatar hidden-sm hidden-md hidden-lg" id="showmenu">
+         <img src="https://s-media-cache-ak0.pinimg.com/originals/6a/5c/03/6a5c036e14fd0a6242da8df9bb3ecc75.jpg" alt="Ema Villarruel">
+        </li>
+        <li class="dropdown avatar hidden-xs">
+          <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/6a/5c/03/6a5c036e14fd0a6242da8df9bb3ecc75.jpg" alt="Ema Villarruel">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <div class="arrow"></div>
+            <li><a href="#">Mi laboratorio</a></li>
+            <li><a href="#">Mis pedidos</a></li>
+            <li><a href="#">Salir</a></li>
+          </ul>
+        </li>
+       </ul>
+     </div>
+
+    </div>
+   </div>
+  </header>
+
+  <div class="menu-mobile hidden-sm hidden-md hidden-lg" style="display: none;">
+   <div class="container">
+    <ul>
+      <li><a href="">Mi laboratorio</a></li>
+      <li><a href="">Mis pedidos</a></li>
+      <li><a href="">Salir</a></li>
+    </ul>
+   </div>
+  </div>
+
+  <!-- Checkout
+  ================================================== -->
+  <section class="checkout">
+   <div class="container">
+    <h4 class="hidden-xs">Selecciona la forma de entrega</h4>
+    <div class="card-page">
+     <h5 class="title">Retiro en sucursal cercanas</h5>
+
+     <div>
+      <div class="radio checkbox-primary" data-toggle="collapse" data-target="#test">
+       <input type="radio" name="radio1" id="radio1" value="option1">
+       <label for="radio1">
+         <h4>FotoPoint <span>Gratis</span></h4>
+         <h5>Humboldt 1650, Palermo, CABA</h5>
+
+         <p>¡En este centro fotografico, tenemos cosas que te pueden interesar mucho!</p>
+       </label>
+      </div>
+
+      <ul id="test" class="collapse">
+       <div class="overflow">
+        <li>
+         <div class="card-image" style="background-image: url('http://nikonrumors.com/wp-content/uploads/2010/11/nikon-white-concept-camera.jpeg');">
+           <div class="middle">
+             <a href="" class="btn btn-primary">Agregar</a>
+           </div>
+         </div>
+         <div class="card-body">
+          <p>Palo Selfie Stick Noga Inalámbrico Bluetooh C/remoto</p>
+          <h5 class="price">$120</h5>
+         </div>
+        </li>
+
+        <li>
+         <div class="card-image" style="background-image: url('https://http2.mlstatic.com/S_133215-MLA25132779192_102016-O.jpg');">
+          <div class="middle">
+            <a href="" class="btn btn-primary">Agregar</a>
+          </div>
+         </div>
+         <div class="card-body">
+          <p>Selfie Stick Monopod Selfies Baston Kelyx Ramos Mejia Gtia</p>
+          <h5 class="price">$165</h5>
+         </div>
+        </li>
+
+        <li>
+         <div class="card-image" style="background-image: url('https://cdn1.cnet.com/img/UxQQfrJm8SI7zegeKc3eXgTi2FA=/770x433/2014/09/28/29697659-b8f9-4ddf-934a-cd8a14835b9c/gopro-hero4-black-08.jpg');">
+           <div class="middle">
+             <a href="" class="btn btn-primary active">Quitar</a>
+           </div>
+         </div>
+         <div class="card-body">
+          <p>Palo Baston Selfie Stick Gopro 2 3 4 Session Sumergible</p>
+          <h5 class="price">$420</h5>
+         </div>
+        </li>
+
+        <li class="next hidden-xs">
+          <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </li>
+       </div>
+      </ul>
+      <hr>
+
+      <div class="radio" data-toggle="collapse" data-target="#test1">
+       <input type="radio" name="radio1" id="radio2" value="option2">
+       <label for="radio2">
+         <h4>Kodak print <span>$20</span></h4>
+         <h5>Ortega y Gasset 256, Palermo, CABA</h5>
+
+         <div id="test1" class="collapse">
+           <p class="alert alert-warning" role="alert">Sacamos el producto seleccionado en “FotoPoint” porque en esta sucursal no lo tiene disponible.</p>
+         </div>
+       </label>
+      </div>
+
+      <hr>
+
+      <div class="radio">
+       <input type="radio" name="radio1" id="radio3" value="option3">
+       <label for="radio3">
+         <h4>La casa de las fotos <span>$50</span></h4>
+         <h5>Guatema.a 1350, Palermo, CABA</h5>
+       </label>
+      </div>
+
+      <hr>
+
+      <div class="radio">
+       <input type="radio" name="radio1" id="radio4" value="option4">
+       <label for="radio4">
+         <h4>Full Color <span>$50</span></h4>
+         <h5>Av. Santa Fe 2430, Palermo, CABA</h5>
+       </label>
+      </div>
+
+      <hr>
+
+      <p><a href="">Ver otros puntos de retiro</a></p>
+
+     </div>
+    </div>
+
+    <div class="card-page">
+     <h5 class="title">Envio a domicilio</h5>
+
+     <div class="radio">
+      <input type="radio" name="radio1" id="radio5" value="option5">
+      <label for="radio5">
+        <h4>Casa de Luisina <span>$180</span></h4>
+        <h5>Arévalo 1230, Palermo, CABA</h5>
+      </label>
+     </div>
+     <hr>
+     <p><a href="">Ver otros puntos de retiro</a></p>
+    </div>
+    </form>
+
+    <p class="buttons">
+      <a href="" class="btn btn-primary btn-next">Continuar</a>
+      <a href="" class="btn btn-default btn-cancel">Cancelar</a>
+    </p>
+   </div>
+  </section>
+
+  <!-- Footer
+  ================================================== -->
+  <footer class="footer hidden-xs hidden-sm">
+   <div class="container">
+    <div class="row">
+     <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+      <span class="login"><a href="/">Ingresar</a></span>
+     </div>
+     <div class="hidden-xs col-sm-12 col-md-10">
+      <span class="logo"><a href="/"><img src="assets/images/logos/logo-footer.png"></a></span>
+     </div>
+     <div class="col-xs-6 col-sm-12 col-md-2">
+      <ul class="social">
+        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </footer>
+
+  <footer class="copyright hidden-xs hidden-sm">
+   <div class="container">
+    <ul>
+      <li>boopix - Copyright 2016</li>
+      <li class="hidden-xs"><a href="">Términos y condiciones</a></li>
+      <li class="hidden-xs"><a href="">Privacidad</a></li>
+    </ul>
+   </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="assets/js/cropper.js"></script>
+  <script src="assets/js/dropzone.js"></script>
+  <script src="assets/js/select.js"></script>
+  <script src="https://use.fontawesome.com/34c19b2e94.js"></script>
+
+  <script>
+  $(document).ready(function() {
+   $('#showmenu').click(function() {
+    $('.menu-mobile').slideToggle("fast");
+   });
+  });
+  </script>
+
+</body>
+</html>
