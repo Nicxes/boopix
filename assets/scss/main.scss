@@ -29,8 +29,15 @@ body {
   &.no-login {
     margin-top: 70px;
   }
+  &.lab-none {
+    background: $lightgray;
+  }
   &.lab {
     background: $lightgray;
+    margin-bottom: 70px;
+  }
+  &.lab-x2 {
+    margin-bottom: 220px;
   }
   &.modal-open {
     overflow: inherit !important;
