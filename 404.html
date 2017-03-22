@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Boopix - 404</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Ion Icons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css">
+
+</head>
+<body class="no-login">
+
+  <!-- Navbar logueado
+  ================================================== -->
+  <nav class="navbar">
+   <div class="container">
+
+    <div class="col-xs-6">
+     <div class="logo">
+      <a href=""><img src="http://www.boopix.com/wp-content/uploads/2016/07/logo.png"></a>
+     </div>
+    </div>
+
+    <div class="col-xs-6">
+     <ul class="menu-logged text-right">
+      <li class="hidden-xs name">Ema Villarruel</li>
+      <li class="avatar hidden-sm hidden-md hidden-lg" id="showmenu">
+       <img src="https://s-media-cache-ak0.pinimg.com/originals/6a/5c/03/6a5c036e14fd0a6242da8df9bb3ecc75.jpg" alt="Ema Villarruel">
+      </li>
+      <li class="dropdown avatar hidden-xs">
+        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/6a/5c/03/6a5c036e14fd0a6242da8df9bb3ecc75.jpg" alt="Ema Villarruel">
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <div class="arrow"></div>
+          <li><a href="#">Mi laboratorio</a></li>
+          <li><a href="#">Mis pedidos</a></li>
+          <li><a href="#">Salir</a></li>
+        </ul>
+      </li>
+     </ul>
+    </div>
+
+   </div>
+  </nav>
+
+  <div class="menu-mobile hidden-sm hidden-md hidden-lg" style="display: none;">
+   <div class="container">
+    <ul>
+      <li><a href="">Mi laboratorio</a></li>
+      <li><a href="">Mis pedidos</a></li>
+      <li><a href="">Salir</a></li>
+    </ul>
+   </div>
+  </div>
+
+  <!-- 404 Page
+  ================================================== -->
+  <section class="page error">
+   <div class="container">
+    <div class="card-not-found">
+     <h1><i class="fa fa-frown-o" aria-hidden="true"></i></h1>
+     <h2><div>¡Disculpas! Esta pagina</div> no funciona</h2>
+     <p><a href="/">Ir al inicio</a></p>
+    </div>
+   </div>
+  </section>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="assets/js/cropper.js"></script>
+  <script src="assets/js/dropzone.js"></script>
+  <script src="assets/js/select.js"></script>
+  <script src="https://use.fontawesome.com/34c19b2e94.js"></script>
+
+  <script>
+  $(document).ready(function() {
+   $('#showmenu').click(function() {
+    $('.menu-mobile').slideToggle("fast");
+   });
+  });
+  </script>
+
+</body>
+</html>

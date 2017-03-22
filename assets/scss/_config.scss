@@ -7,8 +7,14 @@
     src: url('../fonts/GothamRounded.otf');
 }
 
+@font-face {
+    font-family: 'ArialMT';
+    src: url('../fonts/Arialmt.otf');
+}
+
 $font-stack:    		'Roboto', sans-serif;
 $font-title:        'Gotham';
+$font-error:        'ArialMT';
 
 /* =============================================================================
    Variables

@@ -24,6 +24,9 @@
 
 @import "config";
 
+html {
+  background: $lightgray;
+}
 body {
   font-family: $font-stack;
   &.no-login {
@@ -1807,10 +1810,12 @@ h1,h2,h3,h4,h5,h6 {
   &.error {color: $red;}
 
   h1 {
-    font-size: 52px;
+    font-size: 72px;
     text-align: center;
   }
   h2 {
+    font-size: 32px;
+    font-family: $font-error;
     font-weight: normal;
     text-align: center;
   }
