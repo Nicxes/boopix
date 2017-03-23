@@ -2013,7 +2013,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 .page {
   position: relative;
-  background: #ffffff;
+  background: #f4f7f6;
   padding: 60px 0; }
   @media screen and (min-width: 768px) {
     .page {

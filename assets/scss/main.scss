@@ -1800,7 +1800,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .page {
   position: relative;
-  background: $white;
+  background: $lightgray;
   padding: 60px 0;
   @media screen and (min-width: $break-sm) {
     & {
