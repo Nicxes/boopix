@@ -220,9 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0; }
 
 .checkbox input[type="checkbox"]:focus + label::before {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px; }
+  outline: none; }
 
 .checkbox input[type="checkbox"]:checked + label::after {
   font-family: 'FontAwesome';
@@ -328,9 +326,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0; }
 
 .radio input[type="radio"]:focus + label::before {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px; }
+  outline: none; }
 
 .radio input[type="radio"]:checked + label::after {
   -webkit-transform: scale(1, 1);
