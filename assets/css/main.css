@@ -2037,9 +2037,6 @@ h1, h2, h3, h4, h5, h6 {
   .page h1 {
     font-size: 72px;
     text-align: center; }
-    .page h1 img {
-      position: relative;
-      right: 24px; }
   .page h2 {
     font-size: 32px;
     font-family: "ArialMT";
