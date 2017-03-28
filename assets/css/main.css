@@ -1555,6 +1555,9 @@ h1, h2, h3, h4, h5, h6 {
     @media screen and (max-width: 375px) {
       .price-intro .btn-price {
         padding: 10px 38px; } }
+    @media screen and (max-width: 360px) {
+      .price-intro .btn-price {
+        padding: 10px 30px; } }
     @media screen and (max-width: 320px) {
       .price-intro .btn-price {
         padding: 10px 12px; } }
