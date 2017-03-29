@@ -1278,6 +1278,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
     margin-bottom: 20px; }
 
+.tooltip.in {
+  opacity: 1 !important; }
+
+.tooltip-arrow {
+  border-bottom-color: #f4f7f6 !important; }
+
+.tooltip-inner {
+  color: #9b9b9b !important;
+  background-color: #f4f7f6 !important;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2) !important;
+  border-radius: 0; }
+
 /* =============================================================================
    B04 - Footer / Postal Code
    ========================================================================== */
