@@ -914,7 +914,7 @@ h1,h2,h3,h4,h5,h6 {
   background: #f0f3f2;
   padding: 30px 0;
   &.fixed {
-    @media screen and (min-width: $break-lg) {
+    @media screen and (min-width: $break-lg) and (min-height: 780px) {
     position: absolute;
     right: 0;
     left: 0;
@@ -999,7 +999,7 @@ h1,h2,h3,h4,h5,h6 {
   position: relative;
   background: #f0f3f2;
   &.fixed {
-    @media screen and (min-width: $break-lg) {
+    @media screen and (min-width: $break-lg) and (min-height: 780px) {
     position: absolute;
     right: 0;
     left: 0;
