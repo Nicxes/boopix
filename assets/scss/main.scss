@@ -5,11 +5,6 @@
   Resources
   Bootstrap v3.3.7 <getbootstrap.com>
 
-  Colors
-  - Text gray: #
-  - Link blue: #
-  - Heading black: #
-
  * B00 - Configuration
  * B01 - Header & Navigation
  * B02 - Spotlight
@@ -22,7 +17,7 @@
    B00 - Variables
    ========================================================================== */
 
-@import "config";
+@import "components/config";
 
 html {
   background: $lightgray;
@@ -94,9 +89,9 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-@import "buttons";
-@import "checkbox";
-@import "select";
+@import "components/buttons";
+@import "components/checkbox";
+@import "components/select";
 
 /* =============================================================================
    B01 - Header & Navigation
@@ -679,7 +674,7 @@ h1,h2,h3,h4,h5,h6 {
    B02 - Spotlight
    ========================================================================== */
 
-@import "spotlight";
+@import "components/spotlight";
 
 #spotlight {
   height: $spotlight-height;
@@ -903,7 +898,7 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-@import "toolstips.scss";
+@import "components/toolstips.scss";
 
 /* =============================================================================
    B04 - Footer / Postal Code

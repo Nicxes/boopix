@@ -1,0 +1,9 @@
+{
+  "name": "boopix-html",
+  "version": "1.0.0",
+  "description": "Boopix layout components using bootstrap",
+  "main": "index.js",
+  "repository": "https://github.com/Nicxes/boopix-html.git",
+  "author": "Nicolás Miranda <nicxes01@gmail.com>",
+  "license": "MIT"
+}
