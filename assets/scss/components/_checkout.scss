@@ -1,0 +1,191 @@
+/* =============================================================================
+   B13 - Checkout
+   ========================================================================== */
+
+.checkout {
+  position: relative;
+  padding: 20px 0;
+  h4 {
+    margin: 20px 0;
+  }
+  .pencil {
+    color: #d8d8d8;
+    margin-right: 5px;
+  }
+  .form-edit {
+    input {
+      font-size: 16px;
+      border: 0;
+      margin-bottom: 20px;
+      outline: none;
+    }
+  }
+  .card-page {
+    position: relative;
+    background: $white;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    padding: 20px 40px;
+    margin-bottom: 25px;
+    @media screen and (max-width: $break-xs) {
+      padding: 12px 20px;
+    }
+    .title {
+      color: $gray;
+      font-size: 13px;
+      font-weight: 500;
+      margin: 20px 0;
+    }
+    hr {
+      background: #d8d8d8;
+      height: 1px;
+      border: none;
+    }
+    ul {
+      padding: 0;
+      @media screen and (max-width: $break-xs) {
+        overflow: auto;
+      }
+      .overflow {
+       @media screen and (max-width: $break-xs) {
+         width: 540px;
+       }
+      }
+      li {
+        display: inline-block;
+        width: 150px;
+        list-style: none;
+        margin: 0;
+        margin-right: 15px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+        border: solid 1px #d9d9d9;
+        border-radius: 4px;
+        &.next {
+          position: absolute;
+          top: 242px;
+          width: auto;
+          border: 0;
+          box-shadow: none;
+          border-radius: 0;
+          a {
+            color: $gray;
+            font-size: 54px;
+            opacity: 0.3;
+            margin-left: 20px;
+          }
+        }
+        &:first-child {
+          margin-left: 35px;
+        }
+        .card-image {
+          position: relative;
+          height: 116px;
+          width: 150px;
+          background-position: center;
+          background-size: cover;
+          .middle {
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+            text-align: center;
+            .btn {
+              color: $white;
+              font-weight: 500;
+              padding: 5px 28px;
+              &.active {
+                color: $blue;
+                background: $white;
+              }
+            }
+          }
+        }
+        .card-body {
+          padding: 12px 12px;
+          p {
+            font-size: 12px;
+          }
+          .price {
+            color: #929292;
+            font-size: 16px;
+            font-family: $font-stack;
+            font-weight: normal;
+            margin: 0;
+          }
+        }
+      }
+    }
+    a {
+      color: $blue;
+    }
+    .radio {
+      label {
+        display: block;
+      }
+      h4 {
+        color: #222;
+        font-weight: normal;
+        margin: 0 0 5px 0px;
+        span {
+          float: right;
+        }
+      }
+      h5 {
+        color: #222;
+        font-family: $font-stack;
+        font-weight: 400;
+        margin: 0 0 0 0px;
+      }
+      p {
+        color: $gray;
+        font-size: 14px;
+        margin: 15px 0 0 0px;
+        &.alert {
+          color: #c7a04d;
+        }
+      }
+    }
+  }
+  .buttons {
+    a {
+      float: right;
+    }
+    @media screen and (max-width: $break-xs) {
+      & {
+        .btn {
+          float: none;
+          display: block;
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}
+
+.confirmation {
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    span {
+      float: right;
+    }
+  }
+  h4 {
+    span {
+      float: right;
+    }
+  }
+  h5 {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  h6 {
+    color: #2e2f2f;
+    font-family: $font-stack;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 2px 0;
+    a {
+      color: $blue;
+    }
+  }
+}

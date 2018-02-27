@@ -1,0 +1,272 @@
+/* =============================================================================
+   B07 - Dropzone / Checkzone
+   ========================================================================== */
+
+.drop {
+  position: relative;
+  margin: 20px 0;
+  .container {
+   border: 1px solid rgba(0,0,0,0.1);
+   padding: 25px;
+   @media screen and (max-width: $break-sm) {
+     padding: 10px;
+     border: none;
+   }
+  }
+  h5 {
+    position: relative;
+    color: $darkgray;
+    font-family: $font-stack;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    @media screen and (min-width: $break-md) {
+      font-size: 14px;
+    }
+    a {
+      color: $blue;
+      font-family: $font-stack;
+      font-weight: 500;
+      margin-left: 5px;
+    }
+  }
+  .covers {
+    padding: 0;
+    margin: 0;
+    max-height: 1000px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $gray;
+      border-radius: 60px;
+    }
+    li {
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      list-style: none;
+      height: 100px;
+      width: 240px;
+      margin-bottom: 10px;
+      .overlay {
+        position: absolute;
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+      }
+      h5 {
+        color: $white;
+        text-align: center;
+        line-height: 100px;
+        margin: 0;
+      }
+      h6 {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        margin: 0;
+
+        color: $blue;
+        font-size: 10px;
+        background: $white;
+        border-radius: 10px;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        text-align: center;
+      }
+    }
+  }
+  .uploads {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      border: 2px solid transparent;
+      margin-bottom: 10px;
+      padding: 0;
+      &.droppicture {
+        width: 170px;
+      }
+      .btn-add {
+        visibility: hidden;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        i {
+          font-size: 32px;
+        }
+      }
+      .btn-number {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%);
+      }
+      .buttons {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%);
+        padding: 0;
+        text-align: center;
+        li {
+          margin: 0;
+          display: inline-block;
+          .btn-default {
+            border: none;
+            height: 22px;
+            width: 22px;
+            line-height: 22px;
+            .fa {
+              font-size: 12px;
+              line-height: 22px;
+            }
+            @media screen and (max-width: $break-sm) {
+              height: 22px;
+              width: 22px;
+              line-height: 22px;
+              .fa {
+                font-size: 12px;
+                line-height: 22px;
+              }
+            }
+          }
+          .number {
+            color: $white;
+            background: $blue;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+          }
+          .option {
+            visibility: hidden;
+          }
+        }
+      }
+    &:hover {
+      .btn-add {
+        visibility: visible;
+      }
+      .buttons {
+        .option {
+          visibility: visible;
+        }
+      }
+    }
+    &.hd {
+      h5 {
+        color: #202121;
+        font-size: 12px;
+        font-family: $font-stack;
+        font-weight: bold;
+        font-style: italic;
+
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        margin: 0;
+        border-radius: 30px;
+      }
+    }
+    &.low {
+      cursor: not-allowed;
+      h5 {
+        color: $white;
+        font-size: 12px;
+        font-family: $font-stack;
+        font-weight: normal;
+        background: $darkgray;
+
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        margin: 0;
+        padding: 5px 15px;
+        border-radius: 30px;
+      }
+      img {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+      }
+    }
+   }
+  }
+  .dropzone {
+   background: $lightgray;
+   border: 1px dashed $blue;
+   padding: 12px;
+   height: 420px;
+   width: 100%;
+   display: table;
+   @media screen and (max-width: $break-sm) {
+     height: auto;
+     padding: 20px 10px;
+   }
+   @media screen and (max-width: $break-xs) {
+     height: auto;
+     padding: 20px 12px;
+   }
+   .dz-message {
+     color: $blue;
+     display: table-cell;
+     vertical-align: middle;
+     text-align: center;
+   }
+  }
+  .filter {
+    text-align: right;
+    .form-group {
+      display: inline-block;
+      margin-right: 20px;
+      width: 180px;
+    }
+    select.form-control {
+      color: #202121;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+.check {
+  margin: 16px 0;
+  h6 {
+    font-family: $font-stack;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 5px;
+  }
+  .uploads {
+    li {
+      img {
+        border: 8px solid $white;
+      }
+      .buttons {
+        bottom: 18px;
+      }
+      .edit {
+        position: absolute;
+        right: 25px;
+        bottom: 18px;
+        visibility: hidden;
+      }
+      &:hover {
+        .edit {visibility: visible;}
+      }
+    }
+  }
+}

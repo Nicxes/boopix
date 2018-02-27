@@ -1,3 +1,37 @@
+#spotlight {
+  height: $spotlight-height;
+  @media screen and (max-width: $break-xs) {
+    height: 320px;
+  }
+  .carousel-caption {
+    z-index: 10;
+    h1 {
+      font-size: 38px;
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+    }
+    h3 {
+      font-size: 22px;
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    }
+    @media screen and (min-width: $break-sm) {
+      padding-bottom: 140px;
+    }
+  }
+  .item {
+    height: $spotlight-height;
+    background-size: cover;
+    background-position: 30%;
+    background-repeat: no-repeat;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: $spotlight-height;
+    }
+  }
+}
+
 /* Removes the default 20px margin and creates some padding space for the indicators and controls */
 .carousel {
     margin-bottom: 0;

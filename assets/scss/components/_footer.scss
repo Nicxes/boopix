@@ -1,0 +1,181 @@
+/* =============================================================================
+   B04 - Footer / Postal Code
+   ========================================================================== */
+
+.footer {
+  position: relative;
+  background: #f0f3f2;
+  padding: 30px 0;
+  &.fixed {
+    @media screen and (min-width: $break-lg) and (min-height: 780px) {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 71px;
+    width: 100%;
+    z-index: 998;
+    }
+  }
+  .login {
+    line-height: 36px;
+  }
+  .logo {
+    @media screen and (min-width: $break-sm) and (max-width: $break-md) {
+      text-align: center;
+      display: block;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 10px 0;
+    li {
+      list-style: none;
+    }
+    &.links {
+      display: flex;
+      justify-content: center;
+      a {
+        color: lighten($darkgray, 50%);
+        font-size: 13px;
+        font-weight: 500;
+      }
+      @media screen and (min-width: $break-sm) and (max-width: $break-md) {
+        justify-content: center;
+        li {
+          margin-right: 15px;
+        }
+      }
+      @media screen and (min-width: $break-md) {
+        display: inline-block;
+        li {
+          display: inline-block;
+          margin-right: 10px;
+          a {
+            color: lighten($darkgray, 40%);
+            font-weight: 500;
+          }
+          &:first-child {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    &.social {
+      text-align: right;
+      li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      @media screen and (min-width: $break-sm) and (max-width: $break-md) {
+        text-align: center;
+        li {
+          margin-right: 10px;
+        }
+      }
+      @media screen and (max-width: $break-sm) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      @media screen and (min-width: $break-sm) {
+        margin-top: 5px;
+      }
+      a {
+        color: rgba(61,62,62,0.3);
+        font-size: 26px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.copyright {
+  position: relative;
+  background: #f0f3f2;
+  &.fixed {
+    @media screen and (min-width: $break-lg) and (min-height: 780px) {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 998;
+    }
+  }
+  .container {
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  ul {
+    padding: 0;
+    margin: 25px 0;
+    li {
+      color: $gray;
+      list-style: none;
+      display: inline-block;
+      margin-right: 25px;
+      a {
+        color: $blue;
+        font-size: 12px;
+      }
+    }
+  }
+  @media screen and (max-width: $break-sm) {
+   text-align: center;
+  }
+  @media screen and (max-width: $break-xs) {
+   text-align: left;
+  }
+}
+
+.home-banner {
+  background: #3a3b3b;
+  padding: 12px 0;
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  p {
+    color: $white;
+    font-size: 13px;
+    margin: 0;
+    a {
+      color: $blue;
+    }
+    input {
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid $white;
+      text-align: center;
+      width: 88px;
+      opacity: 0.8;
+      &:focus {
+        opacity: 1;
+        outline: none;
+      }
+    }
+    .fa-stack {
+      margin: 0 10px;
+      @media screen and (max-width: $break-xs) {
+        margin: 0;
+      }
+    }
+    .fa-circle {
+      color: $white;
+      font-size: 26px;
+      line-height: 38px;
+    }
+    .fa-inverse {
+      position: relative;
+      color: $blue;
+      font-size: 16px;
+      font-weight: bold;
+      left: 1px;
+    }
+    @media screen and (min-width: $break-md) {
+      text-align: center;
+    }
+  }
+  .close {
+    color: $white;
+    margin-top: 7px;
+  }
+}
