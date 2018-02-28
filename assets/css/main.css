@@ -1,35 +1,9 @@
-/**
-  Boopix
-  Version SASS
-  Author: Nicolas Miranda <hello@nxs.sh>
-  Resources
-  Bootstrap v3.3.7 <getbootstrap.com>
-
- * B00 - Configuration
- * B01 - Header & Navigation
- * B02 - Spotlight
- * B03 - Products
- * B04 - Footer / Postal Code
- * B05 - Login / Register
-**/
-/* =============================================================================
-   B00 - Variables
-   ========================================================================== */
-/* =============================================================================
-   Fonts
-   ========================================================================== */
 @font-face {
   font-family: 'Gotham';
   src: url("../fonts/GothamRounded.otf"); }
 @font-face {
   font-family: 'ArialMT';
   src: url("../fonts/Arialmt.otf"); }
-/* =============================================================================
-   Variables
-   ========================================================================== */
-/* =============================================================================
-   Mixins
-   ========================================================================== */
 html {
   background: #f4f7f6; }
 
@@ -76,6 +50,12 @@ body {
   body.modal-open {
     overflow: inherit !important;
     padding-right: 0 !important; }
+  body.lab-x4 {
+    background: #f4f7f6;
+    margin-top: 94px; }
+    @media screen and (max-width: 767px) {
+      body.lab-x4 {
+        margin-top: 82px; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Gotham"; }
@@ -88,14 +68,36 @@ h1, h2, h3, h4, h5, h6 {
   .no-padding-right-xs {
     padding-right: 0; } }
 
-/* =============================================================================
-   Buttons
-   ========================================================================== */
 .btn-primary {
   background: #197ecd;
   border-radius: 50px;
   padding: 8px 24px;
   border: none; }
+
+.btn-next {
+  position: absolute;
+  color: #197ecd;
+  background: white;
+  top: 40%;
+  border-radius: 50%;
+  width: 40px;
+  padding: 8px 0;
+  text-align: center; }
+
+.btn-secundary {
+  color: #197ecd !important;
+  font-size: 16px;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 50px;
+  padding: 8px 24px;
+  border: none; }
+
+.btn-transparent {
+  color: #197ecd;
+  font-weight: 500; }
+  .btn-transparent svg {
+    margin-right: 5px; }
 
 .btn-login {
   color: white;
@@ -564,9 +566,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   color: black; }
 
-/* =============================================================================
-   B01 - Header & Navigation
-   ========================================================================== */
 .navbar {
   position: fixed;
   top: 0;
@@ -1049,33 +1048,18 @@ h1, h2, h3, h4, h5, h6 {
         margin: 18px -8px;
         padding: 8px 19px; } }
 
-/* =============================================================================
-   B02 - Spotlight
-   ========================================================================== */
-/* Removes the default 20px margin and creates some padding space for the indicators and controls */
-.carousel {
-  margin-bottom: 0; }
-
-/* Reposition the controls slightly */
-.carousel-control {
-  left: -12px; }
-
-.carousel-control.right {
-  right: -12px; }
-
-/* Changes the position of the indicators */
-.carousel-indicators {
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px; }
-
-/* Changes the colour of the indicators */
-.carousel-indicators li {
-  background: #c0c0c0; }
-
-.carousel-indicators .active {
-  background: #333333; }
+.navbar-lab {
+  padding: 24px 15px; }
+  .navbar-lab .m-menu {
+    color: #197ecd;
+    font-size: 22px; }
+  .navbar-lab .right {
+    display: flex; }
+    .navbar-lab .right .separator {
+      color: #d8d8d8;
+      margin: 0 20px; }
+    .navbar-lab .right .menu {
+      margin: 0; }
 
 #spotlight {
   height: 480px; }
@@ -1104,6 +1088,31 @@ h1, h2, h3, h4, h5, h6 {
       left: 0;
       min-width: 100%;
       height: 480px; }
+
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+  margin-bottom: 0; }
+
+/* Reposition the controls slightly */
+.carousel-control {
+  left: -12px; }
+
+.carousel-control.right {
+  right: -12px; }
+
+/* Changes the position of the indicators */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px; }
+
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+  background: #c0c0c0; }
+
+.carousel-indicators .active {
+  background: #333333; }
 
 /* =============================================================================
    B03 - Products
@@ -1419,9 +1428,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     margin-top: 7px; }
 
-/* =============================================================================
-   B05 - Login / Register
-   ========================================================================== */
 .login {
   position: relative;
   background: #f4f7f6; }
@@ -1960,9 +1966,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     font-weight: 500; }
 
-/* =============================================================================
-   B14 - New Address
-   ========================================================================== */
 .newaddress {
   position: relative;
   padding: 40px 0; }
@@ -1993,9 +1996,6 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
         margin: 20px 0; } }
 
-/* =============================================================================
-   B15 - Error and Success
-   ========================================================================== */
 .page {
   position: relative;
   background: #f4f7f6;
@@ -2162,5 +2162,137 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2px 0; }
   .confirmation h6 a {
     color: #197ecd; }
+
+h3 {
+  color: #444444;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 24px 0; }
+
+.intro-lab {
+  position: relative;
+  background: #197ecd;
+  padding: 60px 0; }
+  .intro-lab .container {
+    max-width: 560px; }
+  .intro-lab h1 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.38;
+    margin: 0 0 24px 0;
+    text-align: center; }
+
+.share-lab {
+  position: relative;
+  padding: 46px 0 60px 0; }
+  .share-lab .container {
+    max-width: 400px; }
+  .share-lab h3 {
+    color: #4a4a4a;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.69;
+    text-align: center; }
+
+.featured-collection {
+  position: relative;
+  margin: 0 0 56px 0; }
+  @media screen and (max-width: 767px) {
+    .featured-collection .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .featured-collection .card-collection {
+    max-width: 704px;
+    margin: 0 auto;
+    padding: 16px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    background: white; }
+    .featured-collection .card-collection h4 {
+      color: #4a4a4a;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 500; }
+    .featured-collection .card-collection h5 {
+      color: #4a4a4a;
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      font-weight: normal;
+      margin: 0 0 15px 0; }
+    .featured-collection .card-collection .right-panel {
+      margin: 0;
+      padding: 0;
+      float: right; }
+      .featured-collection .card-collection .right-panel li {
+        list-style: none;
+        display: inline-block;
+        margin: 10px 15px 0 0; }
+        .featured-collection .card-collection .right-panel li a {
+          color: #197ecd;
+          font-size: 18px; }
+      .featured-collection .card-collection .right-panel li:last-child {
+        margin: 0 12px 0 0; }
+        .featured-collection .card-collection .right-panel li:last-child a {
+          color: rgba(0, 0, 0, 0.3); }
+    .featured-collection .card-collection .content .picture {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 300px; }
+    .featured-collection .card-collection .content .load-more {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+      background: #197ecd;
+      padding: 8px 16px 8px 16px; }
+      .featured-collection .card-collection .content .load-more span {
+        float: right; }
+
+.others-collection {
+  position: relative;
+  padding: 0 0 64px 0;
+  overflow: auto; }
+  .others-collection .btn-right {
+    right: -26px; }
+  .others-collection .btn-left {
+    left: -26px; }
+  .others-collection ul {
+    position: relative;
+    padding: 0;
+    margin: 0; }
+    @media screen and (max-width: 970px) {
+      .others-collection ul {
+        width: 960px; } }
+    .others-collection ul li {
+      position: relative;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06);
+      list-style: none;
+      display: inline-block; }
+      .others-collection ul li .picture {
+        background-size: cover;
+        background-position: center;
+        height: 140px;
+        width: 300px; }
+      .others-collection ul li .meta {
+        position: relative;
+        padding: 12px 16px 16px 16px;
+        background: white; }
+        .others-collection ul li .meta .title {
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          margin: 0; }
+        .others-collection ul li .meta .data {
+          color: #4a4a4a;
+          font-size: 13px;
+          line-height: 1.23;
+          margin: 0; }
 
 /*# sourceMappingURL=main.css.map */

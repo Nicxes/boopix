@@ -8,6 +8,35 @@
   padding: 8px 24px;
   border: none;
 }
+.btn-next {
+  position: absolute;
+  color: $blue;
+  background: white;
+  top: 40%;
+
+  border-radius: 50%;
+
+  width: 40px;
+  padding: 8px 0;
+  
+  text-align: center;
+}
+.btn-secundary {
+  color: $blue !important;
+  font-size: 16px;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 50px;
+  padding: 8px 24px;
+  border: none;
+}
+.btn-transparent {
+  color: $blue;
+  font-weight: 500;
+  svg {
+    margin-right: 5px;
+  }
+}
 .btn-login {
   color: white;
   font-size: 18px;
