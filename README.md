@@ -5,7 +5,7 @@
 <table>
   <tr>
     <td>
-      <strong>Boopix</strong><br/>🎯 Official HTML/SASS for Boopix Argentina
+      <strong>Boopix</strong><br/> Boopix.com es un marketplace de fotos que permite a los usuarios recorrer la tienda, seleccionar sus fotos desde cualquier dispositivo smartphone o tablet y comprar los productos online directamente a los principales laboratorios y casas de foto del país.
     </td>
   </tr>
 
